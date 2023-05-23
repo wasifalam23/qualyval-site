@@ -89,10 +89,10 @@
           count="10"
         />
 
-        <CandCardBody :image="p1" name="esther gongela" />
-        <CandCardBody :image="p2" name="lubrica fannandes" />
-        <CandCardBody :image="p3" name="ariyana grozza" />
-        <CandCardBody :image="p4" name="john morchien" />
+        <CandCardBody :image="p1" name="esther gongela" :rating="4" />
+        <CandCardBody :image="p2" name="lubrica fannandes" :rating="3" />
+        <CandCardBody :image="p3" name="ariyana grozza" :rating="4" />
+        <CandCardBody :image="p4" name="john morchien" :rating="4" />
       </div>
 
       <div class="flex flex-col gap-4">
@@ -102,9 +102,9 @@
           count="10"
         />
 
-        <CandCardBody :image="p2" name="roushan ambani" />
-        <CandCardBody :image="p3" name="rubayet jaman" />
-        <CandCardBody :image="p4" name="ray mistirayo" />
+        <CandCardBody :image="p2" name="roushan ambani" :rating="3" />
+        <CandCardBody :image="p3" name="rubayet jaman" :rating="3" />
+        <CandCardBody :image="p4" name="ray mistirayo" :rating="3" />
       </div>
 
       <div class="flex flex-col gap-4">
@@ -114,10 +114,10 @@
           count="10"
         />
 
-        <CandCardBody :image="p1" name="esther gongela" />
-        <CandCardBody :image="p2" name="lubrica fannandes" />
-        <CandCardBody :image="p3" name="ariyana grozza" />
-        <CandCardBody :image="p4" name="ariyana grozza" />
+        <CandCardBody :image="p1" name="esther gongela" :rating="4" />
+        <CandCardBody :image="p2" name="lubrica fannandes" :rating="3" />
+        <CandCardBody :image="p3" name="ariyana grozza" :rating="3" />
+        <CandCardBody :image="p4" name="ariyana grozza" :rating="4" />
       </div>
 
       <div class="flex flex-col gap-4">
@@ -127,8 +127,8 @@
           count="10"
         />
 
-        <CandCardBody :image="p4" name="shown micalle" />
-        <CandCardBody :image="p5" name="stone chold" />
+        <CandCardBody :image="p4" name="shown micalle" :rating="4" />
+        <CandCardBody :image="p5" name="stone chold" :rating="3" />
       </div>
     </section>
   </main>

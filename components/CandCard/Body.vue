@@ -7,11 +7,8 @@
 
     <div class="flex justify-between pt-2">
       <div class="flex">
-        <StarIcon class="w-5 h-5 text-yellow-400" />
-        <StarIcon class="w-5 h-5 text-yellow-400" />
-        <StarIcon class="w-5 h-5 text-yellow-400" />
-        <StarIcon class="w-5 h-5 text-yellow-400" />
-        <StarIcon class="w-5 h-5 text-gray-300" />
+        <StarIcon v-for="n in rating" class="w-5 h-5 text-yellow-400" />
+        <StarIcon v-for="n in 5 - rating" class="w-5 h-5 text-gray-300" />
       </div>
 
       <p>1 day ago</p>
@@ -22,5 +19,5 @@
 <script setup>
 import { StarIcon } from '@heroicons/vue/24/solid';
 
-const { image, name } = defineProps(['image', 'name']);
+const { image, name, rating } = defineProps(['image', 'name', 'rating']);
 </script>
