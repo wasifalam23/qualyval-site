@@ -307,6 +307,10 @@
   <h2>hello</h2>
 </template>
 
-<script setup></script>
+<script setup>
+import { initDrawers } from 'flowbite';
 
-<style scoped></style>
+onMounted(() => {
+  initDrawers();
+});
+</script>

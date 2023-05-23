@@ -1,5 +1,5 @@
 <template>
-  <div class="">
+  <main class="">
     <header class="flex justify-between items-center mx-6">
       <div>
         <h2 class="capitalize text-xl font-semibold">
@@ -80,7 +80,64 @@
         <button class="py-1 px-3 font-semibold rounded-md">Table view</button>
       </div>
     </div>
-  </div>
+
+    <section class="grid grid-cols-4 gap-8 mx-6 mt-6">
+      <div class="flex flex-col gap-4">
+        <CandCardHead
+          class="border-t-green-500"
+          title="New Applied"
+          count="10"
+        />
+
+        <CandCardBody :image="p1" name="esther gongela" />
+        <CandCardBody :image="p2" name="lubrica fannandes" />
+        <CandCardBody :image="p3" name="ariyana grozza" />
+        <CandCardBody :image="p4" name="john morchien" />
+      </div>
+
+      <div class="flex flex-col gap-4">
+        <CandCardHead
+          class="border-t-yellow-500"
+          title="New Applied"
+          count="10"
+        />
+
+        <CandCardBody :image="p2" name="roushan ambani" />
+        <CandCardBody :image="p3" name="rubayet jaman" />
+        <CandCardBody :image="p4" name="ray mistirayo" />
+      </div>
+
+      <div class="flex flex-col gap-4">
+        <CandCardHead
+          class="border-t-orange-500"
+          title="New Applied"
+          count="10"
+        />
+
+        <CandCardBody :image="p1" name="esther gongela" />
+        <CandCardBody :image="p2" name="lubrica fannandes" />
+        <CandCardBody :image="p3" name="ariyana grozza" />
+        <CandCardBody :image="p4" name="ariyana grozza" />
+      </div>
+
+      <div class="flex flex-col gap-4">
+        <CandCardHead
+          class="border-t-violet-500"
+          title="New Applied"
+          count="10"
+        />
+
+        <CandCardBody :image="p4" name="shown micalle" />
+        <CandCardBody :image="p5" name="stone chold" />
+      </div>
+    </section>
+  </main>
 </template>
 
-<script setup></script>
+<script setup>
+import p1 from '@/assets/images/pp-1.jpg';
+import p2 from '@/assets/images/pp-2.jpg';
+import p3 from '@/assets/images/pp-3.jpg';
+import p4 from '@/assets/images/pp-4.jpg';
+import p5 from '@/assets/images/pp-5.jpg';
+</script>
