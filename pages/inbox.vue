@@ -28,7 +28,7 @@
       <!-- CHAT -->
       <InboxChat />
 
-      <div>People Details</div>
+      <InboxPInfo />
     </section>
   </main>
 </template>
