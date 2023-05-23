@@ -1,6 +1,6 @@
 <template>
   <main class="">
-    <header class="flex justify-between items-center mx-6">
+    <header class="flex justify-between items-center mx-6 mt-6">
       <div>
         <h2 class="capitalize text-xl font-semibold">
           senior product designer
