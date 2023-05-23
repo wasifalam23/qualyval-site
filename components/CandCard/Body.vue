@@ -24,5 +24,3 @@ import { StarIcon } from '@heroicons/vue/24/solid';
 
 const { image, name } = defineProps(['image', 'name']);
 </script>
-
-<style lang="scss" scoped></style>
