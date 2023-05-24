@@ -1,5 +1,5 @@
 <template>
-  <main>
+  <main class="mb-8">
     <div
       class="text-sm font-medium text-center text-gray-500 border-b border-gray-200 dark:text-gray-400 dark:border-gray-700"
     >
@@ -22,7 +22,9 @@
       </ul>
     </div>
 
-    <section class="mx-6 grid grid-cols-[1fr_2fr_1fr]">
+    <section
+      class="mx-6 grid grid-cols-[1fr_2fr_1fr] max-xl:grid-cols-2 max-md:grid-cols-1"
+    >
       <!-- PEOPLE -->
       <InboxPeople />
       <!-- CHAT -->

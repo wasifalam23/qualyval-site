@@ -1,5 +1,7 @@
 <template>
-  <div class="pt-3 border-r border-gray-200">
+  <div
+    class="pt-3 border-r border-gray-200 max-md:pt-12 max-md:border-none max-md:mb-6"
+  >
     <div>
       <header
         class="flex justify-between items-center px-3 border-b border-b-gray-200 pb-3"
@@ -27,7 +29,7 @@
         >
       </div>
 
-      <div class="px-3 flex flex-col gap-4">
+      <div class="px-3 flex flex-col gap-4 max-md:p-0">
         <div class="bg-white rounded-md px-2 py-3 w-2/3">
           <p class="text-base">
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique
@@ -56,7 +58,7 @@
         >
       </div>
 
-      <div class="px-3 flex flex-col gap-4">
+      <div class="px-3 flex flex-col gap-4 max-md:p-0">
         <div class="bg-green-300 rounded-md px-2 py-3 w-2/3 self-end">
           <p class="text-base">
             Lorem, ipsum dolor sit amet consectetur adipisicing elit. Incidunt
@@ -70,7 +72,7 @@
         </div>
       </div>
 
-      <form class="mt-24 px-3">
+      <form class="mt-24 px-3 max-md:mt-8 max-md:p-0">
         <label for="chat" class="sr-only">Your message</label>
         <div
           class="flex items-center px-3 py-2 rounded-lg bg-gray-50 dark:bg-gray-700"

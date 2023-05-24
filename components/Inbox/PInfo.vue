@@ -1,7 +1,7 @@
 <template>
   <section>
     <div
-      class="border-b border-b-gray-200 py-4 flex justify-center flex-col items-center"
+      class="border-b border-b-gray-200 py-4 flex justify-center flex-col items-center max-xl:border-t max-xl:border-t-gray-200 max-xl:mt-4 max-md:items-start max-md:pt-6"
     >
       <img
         class="w-12 h-12 rounded-full"
@@ -12,7 +12,9 @@
       <button class="capitalize text-sm text-gray-600">View profile</button>
     </div>
 
-    <div class="px-3 py-5 border-b border-b-gray-200 flex flex-col gap-2">
+    <div
+      class="px-3 py-5 border-b border-b-gray-200 flex flex-col gap-2 max-md:px-0"
+    >
       <div class="flex items-center gap-2">
         <EnvelopeIcon class="w-6 h-6" />
         <p>codyfish@gmail.com</p>
@@ -24,7 +26,7 @@
       </div>
     </div>
 
-    <div class="px-3 py-5 border-b border-b-gray-200">
+    <div class="px-3 py-5 border-b border-b-gray-200 max-md:px-0">
       <span class="text-xs font-semibold">Applied For:</span>
       <p class="font-semibold">Job: Senior UIX Designer</p>
       <div class="mt-2">
@@ -39,14 +41,14 @@
       </div>
     </div>
 
-    <div class="px-3 py-5 border-b border-b-gray-200">
+    <div class="px-3 py-5 border-b border-b-gray-200 max-md:px-0">
       <Button class="flex items-center gap-2">
         <PlusCircleIcon class="w-6 h-6 text-blue-700" />
         <span class="text-sm font-semibold"> Add Owner</span>
       </Button>
     </div>
 
-    <div class="px-3 py-5">
+    <div class="px-3 py-5 max-md:px-0">
       <h6 class="text-sm font-medium">Schedule:</h6>
       <div
         class="mt-2 border border-gray-200 border-l-green-400 border-l-4 rounded-md p-2"

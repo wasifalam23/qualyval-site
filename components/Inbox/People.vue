@@ -1,5 +1,7 @@
 <template>
-  <div class="pr-3 border-r border-gray-200 pt-3">
+  <div
+    class="pr-3 border-r border-gray-200 pt-3 max-md:border-none max-md:pr-0"
+  >
     <div class="flex gap-2 w-full">
       <InboxInput />
       <div
