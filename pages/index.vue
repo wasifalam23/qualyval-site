@@ -1,6 +1,8 @@
 <template>
-  <main class="">
-    <header class="flex justify-between items-center mx-6 mt-6">
+  <main class="mb-8">
+    <header
+      class="flex justify-between items-center mx-6 mt-6 max-md:flex-col max-md:items-start max-md:gap-4 max-md:mt-8"
+    >
       <div>
         <h2 class="capitalize text-xl font-semibold">
           senior product designer
@@ -26,15 +28,15 @@
     <div
       class="text-sm font-medium text-center text-gray-500 border-b border-gray-200 dark:text-gray-400 dark:border-gray-700 mt-4"
     >
-      <ul class="flex flex-wrap -mb-px ml-2">
-        <li class="mr-12">
+      <ul class="flex gap-12 flex-wrap -mb-px ml-2 max-xl:gap-5">
+        <li>
           <a
             href="#"
             class="text-base font-semibold inline-block p-4 border-b-2 border-transparent rounded-t-lg hover:text-gray-700 hover:border-gray-300 text-gray-700"
             >Candidate</a
           >
         </li>
-        <li class="mr-12">
+        <li>
           <a
             href="#"
             class="text-base font-semibold inline-block p-4 border-b-2 rounded-t-lg"
@@ -42,14 +44,14 @@
             >Job Details</a
           >
         </li>
-        <li class="mr-12">
+        <li>
           <a
             href="#"
             class="text-base font-semibold inline-block p-4 border-b-2 border-transparent rounded-t-lg hover:text-gray-600 hover:border-gray-300 dark:hover:text-gray-300"
             >Time Line</a
           >
         </li>
-        <li class="mr-12">
+        <li>
           <a
             href="#"
             class="text-base font-semibold inline-block p-4 border-b-2 border-transparent rounded-t-lg hover:text-gray-600 hover:border-gray-300 dark:hover:text-gray-300"
@@ -65,7 +67,9 @@
       </ul>
     </div>
 
-    <div class="mx-6 mt-6 flex justify-between">
+    <div
+      class="mx-6 mt-6 flex justify-between items-center max-md:flex-col max-md:items-start max-md:gap-4"
+    >
       <h3 class="capitalize text-base font-medium">
         total candidates:
         <span class="p-1 bg-green-700 text-white font-semibold rounded-sm ml-1">
@@ -81,7 +85,9 @@
       </div>
     </div>
 
-    <section class="grid grid-cols-4 gap-8 mx-6 mt-6">
+    <section
+      class="grid grid-cols-4 gap-8 mx-6 mt-6 max-lg:grid-cols-2 max-lg:gap-y-12 max-md:grid-cols-1 max-md:mt-8"
+    >
       <div class="flex flex-col gap-4">
         <CandCardHead
           class="border-t-green-500"
