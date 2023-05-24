@@ -1,3 +1,29 @@
+<script setup>
+import { Modal } from 'flowbite';
+
+onMounted(() => {
+  // setup available elements
+  const $buttonElement = document.querySelector('#button');
+  const $modalElement = document.querySelector('#modal');
+  const $closeButton = document.querySelector('#closeButton');
+
+  // set modal options
+  const modalOptions = {
+    backdropClasses:
+      'bg-gray-900 bg-opacity-50 dark:bg-opacity-80 fixed inset-0 z-40',
+  };
+
+  // create a new modal instance
+  if ($modalElement) {
+    const modal = new Modal($modalElement, modalOptions);
+
+    // set event listeners for the button to show the modal
+    $buttonElement.addEventListener('click', () => modal.toggle());
+    $closeButton.addEventListener('click', () => modal.hide());
+  }
+});
+</script>
+
 <template>
   <button
     data-drawer-target="sidebar-multi-level-sidebar"
@@ -79,7 +105,8 @@
           <a
             href="#"
             class="flex items-center p-2 rounded-lg text-white hover:bg-gray-700"
-            ><svg
+          >
+            <svg
               xmlns="http://www.w3.org/2000/svg"
               fill="none"
               viewBox="0 0 24 24"
@@ -96,11 +123,12 @@
               ></path></svg
             ><span class="flex-1 ml-3 whitespace-nowrap"
               >Calendar &amp; Todos</span
-            ></a
-          >
+            >
+          </a>
         </li>
 
         <h3 class="text-gray-400 uppercase px-2 py-3">Recruitment</h3>
+
         <li>
           <NuxtLink
             class="flex items-center p-2 rounded-lg text-white hover:bg-gray-700"
@@ -304,11 +332,3 @@
     </div>
   </aside>
 </template>
-
-<script setup>
-import { initDrawers } from 'flowbite';
-
-onMounted(() => {
-  initDrawers();
-});
-</script>
