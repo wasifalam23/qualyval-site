@@ -1,5 +1,5 @@
 <template>
-  <main>
+  <main class="mb-8 max-md:mt-4">
     <div
       class="text-sm font-medium text-center text-gray-500 border-b border-gray-200 dark:text-gray-400 dark:border-gray-700"
     >
@@ -22,30 +22,36 @@
       </ul>
     </div>
 
-    <header class="flex items-center gap-8 mx-6 mt-4">
+    <header
+      class="flex items-center gap-8 mx-6 mt-4 max-lg:flex-col max-lg:items-start max-lg:gap-4"
+    >
       <div class="flex items-center gap-2">
         <span class="text-xl font-semibold">7</span>
         <h3 class="text-xl font-semibold">Active Jobs</h3>
       </div>
 
-      <div class="flex items-center gap-2">
-        <span class="text-gray-600">Short by:</span>
-        <div class="flex items-center">
-          <p class="capitalize text-sm font-semibold">creation date</p>
-          <ChevronUpDownIcon class="w-4" />
+      <div class="flex gap-8">
+        <div class="flex items-center gap-2">
+          <span class="text-gray-600">Short by:</span>
+          <div class="flex items-center">
+            <p class="capitalize text-sm font-semibold">creation date</p>
+            <ChevronUpDownIcon class="w-4" />
+          </div>
         </div>
-      </div>
 
-      <div class="flex items-center gap-2">
-        <span class="text-gray-600">Status:</span>
-        <div class="flex items-center">
-          <p class="capitalize text-sm font-semibold">all status</p>
-          <ChevronUpDownIcon class="w-4" />
+        <div class="flex items-center gap-2">
+          <span class="text-gray-600">Status:</span>
+          <div class="flex items-center">
+            <p class="capitalize text-sm font-semibold">all status</p>
+            <ChevronUpDownIcon class="w-4" />
+          </div>
         </div>
       </div>
     </header>
 
-    <section class="grid grid-cols-4 gap-6 mx-6 mt-6">
+    <section
+      class="grid grid-cols-4 gap-6 mx-6 mt-6 max-xl:grid-cols-2 max-md:grid-cols-1"
+    >
       <JobsCard
         class="border-t-orange-500"
         title="Desing"
