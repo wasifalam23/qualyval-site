@@ -1,25 +1,25 @@
 <script setup>
-import { Modal } from 'flowbite';
+import { Drawer } from 'flowbite';
 
 onMounted(() => {
   // setup available elements
   const $buttonElement = document.querySelector('#button');
-  const $modalElement = document.querySelector('#modal');
+  const $drawerElement = document.querySelector('#drawer');
   const $closeButton = document.querySelector('#closeButton');
 
-  // set modal options
-  const modalOptions = {
+  // set drawer options
+  const drawerOptions = {
     backdropClasses:
       'bg-gray-900 bg-opacity-50 dark:bg-opacity-80 fixed inset-0 z-40',
   };
 
-  // create a new modal instance
-  if ($modalElement) {
-    const modal = new Modal($modalElement, modalOptions);
+  // create a new drawer instance
+  if ($drawerElement) {
+    const drawer = new Drawer($drawerElement, drawerOptions);
 
-    // set event listeners for the button to show the modal
-    $buttonElement.addEventListener('click', () => modal.toggle());
-    $closeButton.addEventListener('click', () => modal.hide());
+    // set event listeners for the button to show the drawer
+    $buttonElement.addEventListener('click', () => drawer.toggle());
+    $closeButton.addEventListener('click', () => drawer.hide());
   }
 });
 </script>
